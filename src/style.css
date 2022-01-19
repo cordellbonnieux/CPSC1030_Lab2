@@ -1,0 +1,87 @@
+/*
+*   GENERAL STYLES
+*/
+body {
+    margin: 0px;
+    background-color:black; /* for now */
+    width:100vw;
+    height:100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+
+p {
+
+}
+/*
+*   NAVIGATION
+*/
+.nav {
+    background-color:white; /* for now */
+    position:fixed;
+    top:0;
+    width:100vw;
+    overflow:hidden;
+}
+
+.nav_inner {
+    padding:10px 3%;
+}
+
+.nav_inner_item {
+
+}
+
+.nav_inner_item a {
+
+}
+
+.nav_inner_item a:hover {
+
+}
+
+/*
+*   MAIN CONTENT
+*/
+.container {
+    margin:100px 4% 50px 0px;
+    background-color:black; /* for now */
+    color:white; /* for now */
+}
+
+/*
+*   INDIVIDUAL CONTENT SECTIONS
+*/
+.section {
+
+}
+
+.section_title {
+
+}
+
+.section_inner {
+
+}
+
+.section_inner_text {
+
+}
+
+.section_inner_img {
+
+}
+
+.section_inner_img img {
+    max-width:45%; /* for now */
+}
