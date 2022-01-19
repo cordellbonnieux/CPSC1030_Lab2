@@ -1,6 +1,8 @@
 /*
 *   GENERAL STYLES
 */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Roboto+Mono&display=swap');
+
 body {
     margin: 0px;
     background-color:black; /* for now */
@@ -9,7 +11,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-
+    margin:0;
+    font-family: 'Oxygen Mono', monospace;
 }
 
 a {
@@ -20,8 +23,8 @@ a:hover {
 
 }
 
-p {
-
+p, li, blockquote, dl, a {
+    font-family: 'Roboto Mono', monospace;
 }
 /*
 *   NAVIGATION
@@ -54,28 +57,59 @@ p {
 *   MAIN CONTENT
 */
 .container {
-    margin:100px 4% 50px 0px;
-    background-color:black; /* for now */
-    color:white; /* for now */
+    margin:100px 10% 50px 0px;
+    background-color:white; /* for now */
+    color:black; /* for now */
+    max-width:900px;
+    border-radius:0px 5px 0px 0px;
+    padding:5px 5px 25px 5px;
+}
+
+.main_section {
+    padding:10px;
+    max-width:600px;
+    margin:20px auto;
+}
+
+.main_section h1 {
+
 }
 
 /*
 *   INDIVIDUAL CONTENT SECTIONS
 */
 .section {
-
+    padding:10px;
+    max-width:600px;
+    margin:20px auto;
+    border:3px solid black;
+    border-right:5px solid black;
+    border-bottom:5px solid black;
 }
 
 .section_title {
-
+    background-color: black;
+    padding: 10px 5px;
+    display: block;
+    color: white;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .section_inner {
-
+    display:flex;
+    flex-wrap:wrap;
 }
 
-.section_inner_text {
+.section_inner_item {
+    max-width:49%;
+}
 
+.section_inner_item_full {
+    max-width:98%;
+}
+.section_inner_text {
+    
 }
 
 .section_inner_img {
@@ -83,5 +117,5 @@ p {
 }
 
 .section_inner_img img {
-    max-width:45%; /* for now */
+    max-width:100%;
 }
