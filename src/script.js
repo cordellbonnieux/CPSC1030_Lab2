@@ -1,5 +1,6 @@
 const bg = document.querySelector('body');
-let counter = 0;
+let counter = 0, lastRecordedTime = 0;
+const delayTime = 4;
 const colors = {
     0: 'pink',
     1: 'blue',
@@ -9,16 +10,14 @@ const colors = {
 }
 
 function step(timestamp) {
-    // mess around with this
-    console.log(timestamp);
-    const interval = Math.floor(timestamp)
-    if (interval % 6000 == 0) {
-        console.log("every six seconds");
+    const interval = Math.floor(timestamp * 0.001);
+    if (interval > lastRecordedTime + delayTime) {
         if (counter < 5) {
             counter++;
         } else {
             counter = 0;
         }
+        lastRecordedTime = interval;
         bg.style.backgroundColor = colors[counter];
     }
     window.requestAnimationFrame(step);
