@@ -30,15 +30,19 @@ p, li, blockquote, dl, a {
 *   NAVIGATION
 */
 .nav {
-    background-color:white; /* for now */
+    background-color:black; /* for now */
     position:fixed;
     top:0;
     width:100vw;
     overflow:hidden;
+    text-align:center;
 }
 
 .nav_inner {
+    text-align:left;
+    margin:10px auto;
     padding:10px 3%;
+    max-width:900px;
 }
 
 .nav_inner_item {
@@ -46,11 +50,17 @@ p, li, blockquote, dl, a {
 }
 
 .nav_inner_item a {
-
+    text-decoration:none;
+    color:white;
+    transition:0.5s;
+    padding:6px 8px;
+    background-color:black;
+    border:3px solid white;
 }
 
 .nav_inner_item a:hover {
-
+    background-color:white;
+    color:black;
 }
 
 /*
@@ -60,7 +70,6 @@ p, li, blockquote, dl, a {
     margin:100px 10% 50px 0px;
     background-color:white; /* for now */
     color:black; /* for now */
-    max-width:900px;
     border-radius:0px 5px 0px 0px;
     padding:5px 5px 25px 5px;
 }
@@ -102,7 +111,7 @@ p, li, blockquote, dl, a {
 }
 
 .section_inner_item {
-    max-width:49%;
+    max-width:48%;
 }
 
 .section_inner_item_full {
@@ -113,7 +122,7 @@ p, li, blockquote, dl, a {
 }
 
 .section_inner_img {
-
+    padding:5px;
 }
 
 .section_inner_img img {
